@@ -5,18 +5,50 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+<script>
+    loadAds();
+</script>
 
-<div class="container">
-    <h1>Login</h1>
+<!-- LEFT BOX - USER LOGIN -->
+<div class="left-box">
+    <div class="login-box">
+        <h1>User Login</h1>
 
-    <input id="voterid" class="input" placeholder="Voter ID">
-    <input id="password" class="input" type="password" placeholder="Password">
+        <input id="voterid" class="input" placeholder="Voter ID">
+        <input id="password" class="input" type="password" placeholder="Password">
 
-    <button class="btn" onclick="login()">Login</button>
+        <button class="btn" onclick="login()">Login</button>
 
-    <p class="reg-link">
-        Don't have an account? <a href="register.html">Register here</a>
-    </p>
+        <p class="reg-link">
+            Don't have an account? <a href="register.html">Register here</a>
+        </p>
+    </div>
+</div>
+
+<!-- CENTER BOX - ADVERTISEMENT -->
+<div class="center-box">
+    <div class="ad-box">
+        <h2>Advertisement</h2>
+
+        <video width="100%" height="250" controls autoplay muted loop class="ad-video">
+            <source src="Add.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+
+        <p class="ad-text">Your sponsored message will appear here.</p>
+    </div>
+</div>
+
+<!-- RIGHT BOX - ADMIN LOGIN -->
+<div class="right-box">
+    <div class="login-box">
+        <h1>Admin Login</h1>
+
+        <input id="adminid" class="input" placeholder="Admin ID">
+        <input id="adminpass" class="input" type="password" placeholder="Password">
+
+        <button class="btn admin-btn" onclick="adminLogin()">Admin Login</button>
+    </div>
 </div>
 
 <script src="script.js"></script>

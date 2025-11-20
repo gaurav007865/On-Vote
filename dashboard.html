@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<!-- TOP RIGHT LOGOUT BUTTON -->
+<button class="logout-btn" onclick="userLogout()">Logout</button>
+
+<!-- LEFT SIDEBAR -->
+<div class="sidebar">
+    <h2>Voting App</h2>
+    <a href="#" class="active">Dashboard</a>
+    <a href="index.html">Logout</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+    <h1>Welcome, <span id="username"></span> 👋</span></h1>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Email</h3>
+            <p id="email"></p>
+        </div>
+
+        <div class="card">
+            <h3>Voter ID</h3>
+            <p id="voterid"></p>
+        </div>
+
+        <div class="card">
+            <h3>Voting Status</h3>
+            <p id="votestatus"></p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Select Your Candidate</h2>
+
+    <div id="candidateList" class="candidate-grid"></div>
+
+</div>
+
+<!-- USER SESSION CHECK -->
+<script>
+    if (!localStorage.getItem("voterid")) {
+        window.location.href = "index.html";
+    }
+</script>
+
+<!-- MUST LOAD script.js FIRST -->
+<script src="script.js"></script>
+
+<!-- CALL FUNCTIONS AFTER script.js LOAD -->
+<script>
+    loadDashboard();
+    loadCandidates();
+</script>
+
+</body>
+</html>
