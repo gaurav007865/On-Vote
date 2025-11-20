@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="admin-container">
+
+    <h1>Admin Dashboard</h1>
+    <p class="subtitle">Live Voting Statistics</p>
+
+    <div class="stats-box" id="statsBox"></div>
+
+    <h2>Candidate Vote Analysis</h2>
+    <canvas id="voteChart" width="400" height="200"></canvas>
+
+    <div class="winner-box" id="winnerBox"></div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+    loadAdminData();
+</script>
+
+</body>
+</html>

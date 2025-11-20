@@ -1,0 +1,57 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #1e1e2e, #3a0ca3, #7209b7, #f72585);
+    background-size: 300% 300%;
+    animation: bgMove 10s infinite;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.admin-container {
+    width: 80%;
+    margin: auto;
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.stats-box {
+    text-align: left;
+    margin-top: 25px;
+    padding: 20px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 15px;
+}
+
+.stats-box p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.winner-box {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255,255,255,0.20);
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
