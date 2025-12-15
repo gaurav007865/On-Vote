@@ -55,3 +55,25 @@ h1 {
     font-size: 22px;
     font-weight: bold;
 }
+.logout-btn {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(135deg, #ff6b6b, #ff006e);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+
+    box-shadow: 0 4px 10px rgba(255, 0, 110, 0.6);
+    transition: 0.2s ease-in-out;
+}
+
+.logout-btn:hover {
+    transform: scale(1.05);
+}
